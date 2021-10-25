@@ -1,4 +1,4 @@
-import { useReducer, createContext, useState, useContext } from "react";
+import { useReducer, createContext, useContext } from "react";
 import { quizOne } from "../data/getQuiz";
 import { Quiz } from "../data/quizTypes";
 

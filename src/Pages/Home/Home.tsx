@@ -5,7 +5,7 @@ import "./Home.css"
 
 export default function Home(){
 
-    const {state, dispatch} = useQuiz();
+    const { dispatch} = useQuiz();
     const [name, setName] = useState("") 
     const navigate = useNavigate();
 

@@ -1,7 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import { Header } from './Components/Header/Header';
+
 import Home from './Pages/Home/Home';
 import QuizPage from './Pages/QuizPage/QuizPage';
 import { Routes, Route } from 'react-router-dom';
