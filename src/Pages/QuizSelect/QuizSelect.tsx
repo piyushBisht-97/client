@@ -22,12 +22,12 @@ export default function QuizSelect(){
             </p>
             <ul className="quiz-list">
                 <li onClick={()=>setQuiz(quizOne)} className="quiz-card meme-quiz">
-                <img className="quiz-icon" src={quizOne.quizImg}/>
+                <img className="quiz-icon" src={quizOne.quizImg} alt=""/>
                 
                 <p className="quiz-title">{quizOne.quizName}</p>
                </li>
                 <li onClick={()=>setQuiz(quizTwo)} className="quiz-card food-quiz">
-                <img className="quiz-icon" src={quizTwo.quizImg}/>
+                <img className="quiz-icon" src={quizTwo.quizImg} alt=""/>
                     <p className="quiz-title">{quizTwo.quizName}</p></li>
             </ul>
         </div>

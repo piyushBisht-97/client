@@ -1,7 +1,7 @@
-import { useReducer, useState } from "react";
+
 import { Header } from "../../Components/Header/Header";
 // import { calculateScore } from "../../utils/score-keeper";
-import { quizOne } from "../../data/getQuiz";
+// import { quizOne } from "../../data/getQuiz";
 import { Question, Option } from "../../data/quizTypes";
 import { useQuiz } from "../../Context/QuizContext";
 import "./QuizPage.css"
@@ -18,7 +18,7 @@ export default function QuizPage(){
 
     return(
         <div>
-            <Header userName={state.user!=undefined?state.user:"Guest"} userScore={state.score}/>
+            <Header userName={state.user!==undefined?state.user:"Guest"} userScore={state.score}/>
             {state.questionNo>quiz.questions.length?"":<h2>Current Question: {state.questionNo}</h2>}
             {state.questionNo>quiz.questions.length?<p>You've completed the quiz!<br/><button onClick={()=>dispatch({type:"reset"})}>Reset!</button></p>:<div className="question-card">
                 <p>{quiz?.questions[state.questionNo-1].question}</p>
