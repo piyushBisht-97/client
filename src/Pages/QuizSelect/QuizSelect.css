@@ -31,19 +31,20 @@ transition: all 0.2s;
     transform: scale(1.1);
 }
 
-.meme-quiz{
-    background-color: rgb(196, 7, 0);
+.quiz1{
+    background-color: rgb(248, 20, 12);
     color: white;
 }
 
-.food-quiz{
-    background-color: rgb(23, 0, 128);
+.quiz2{
+    background-color: rgb(51, 9, 240);
     color: white;
 }
 
 .quiz-icon{
     height: 80%;
     width: 100%;
+    
     border-radius: 10px;
 }
 

@@ -2,7 +2,7 @@ import {Quiz} from './quizTypes'
 
 
 const quizOne:Quiz = {
-    quizName: "Anime Universe",
+    quizName: "jujutsu kaisen ",
     questions: [
       {
         question:
@@ -151,7 +151,7 @@ const quizOne:Quiz = {
     ]
   }
   const quizTwo:Quiz = {
-    quizName: "Anime Universe",
+    quizName: "Naruto shipuddin",
     questions: [
       {
         question:

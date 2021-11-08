@@ -13,7 +13,7 @@ export default function QuizSelect(){
         dispatch({type:"set_Quiz",payload:{quiz:quiz}})
         navigate("/quiz")
     }
-
+    
     return(
         <div className="quiz-select-layout">
             <p className="quiz-select-heading">
@@ -21,13 +21,13 @@ export default function QuizSelect(){
                 Which quiz would you like to play? 
             </p>
             <ul className="quiz-list">
-                <li onClick={()=>setQuiz(quizOne)} className="quiz-card meme-quiz">
-                <img className="quiz-icon" src={quizOne.quizImg} alt=""/>
+                <li onClick={()=>setQuiz(quizOne)} className="quiz-card quiz1">
+                <img className="quiz-icon" src="https://image.uniqlo.com/UQ/ST3/eu/imagesother/2021/ut/animation/pc-ut-jujutsu-kaisen-anime-hero-01.jpg" alt=""/>
                 
                 <p className="quiz-title">{quizOne.quizName}</p>
                </li>
-                <li onClick={()=>setQuiz(quizTwo)} className="quiz-card food-quiz">
-                <img className="quiz-icon" src={quizTwo.quizImg} alt=""/>
+                <li onClick={()=>setQuiz(quizTwo)} className="quiz-card quiz2">
+                <img className="quiz-icon" src="https://wallpaperaccess.com/full/315701.jpg" alt=""/>
                     <p className="quiz-title">{quizTwo.quizName}</p></li>
             </ul>
         </div>
