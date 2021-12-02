@@ -208,7 +208,7 @@ const quizOne:Quiz = {
         negativePoints: 1,
         options: [
           {
-            text: "Itachi Uchiha",
+            text: "Minato Namikaze",
             isRight: true
           },
           {
@@ -227,7 +227,7 @@ const quizOne:Quiz = {
       },
       {
         question:
-          "Who is known as GOd of shinobi",
+          "Who is known as God of shinobi",
         points: 5,
         negativePoints: 1,
         options: [
@@ -244,7 +244,7 @@ const quizOne:Quiz = {
             isRight: false
           },
           {
-            text: "Tobirama",
+            text: "Hashirama",
             isRight: true
           } 
         ]

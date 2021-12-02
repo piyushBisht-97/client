@@ -5,7 +5,8 @@ import { Header } from "../../Components/Header/Header";
 import { Question, Option } from "../../data/quizTypes";
 import { useQuiz } from "../../Context/QuizContext";
 import "./QuizPage.css"
-const buttonStyle = {display: "block", width:"100%", padding: "1rem", fontSize:"1.2rem"}
+import { Link } from "react-router-dom";
+const buttonStyle = {display: "block", width:"100%", padding: "1rem", fontSize:"1.2rem",margin:"5px"}
 
 
 export default function QuizPage(){
@@ -20,7 +21,10 @@ export default function QuizPage(){
         <div>
             <Header userName={state.user!==undefined?state.user:"Guest"} userScore={state.score}/>
             {state.questionNo>quiz.questions.length?"":<h2>Current Question: {state.questionNo}</h2>}
-            {state.questionNo>quiz.questions.length?<p>You've completed the quiz!<br/><button onClick={()=>dispatch({type:"reset"})}>Reset!</button></p>:<div className="question-card">
+            {state.questionNo>quiz.questions.length?<p>You've completed the quiz!<br/><br/><Link className="reset" to="/"onClick={()=>dispatch({type:"reset"})}>Reset</Link>
+            
+            <Link className="reset" to="/quizselect">Quiz Select</Link>
+            </p>:<div className="question-card">
                 <p>{quiz?.questions[state.questionNo-1].question}</p>
                 <ul className="answer-options">
                     {quiz?.questions[state.questionNo-1].options.map((option)=>{

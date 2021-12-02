@@ -1,4 +1,14 @@
 .answer-options{
     padding: 0;
     list-style: none;
+     
+}
+.reset{
+    color: white;
+    background-color:rgb(75, 1, 145, 0.8) ;
+    margin: 5px 5px;
+    list-style: none;
+    text-decoration:none;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
